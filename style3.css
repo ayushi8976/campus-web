@@ -1,0 +1,196 @@
+
+body{
+    background-color:  rgb(226, 238, 249);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box5 {
+    height:20rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    width: 18rem;
+    box-shadow: 1px 4px 6px rgba(8, 9, 10, 0.9);
+
+}
+.box5 img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+h2 {
+    font-size: 35px;
+}
+
+.content2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 5rem;
+    text-align: center;
+    transition: top 0.3s ease;
+    padding-right: 6rem;
+}
+
+.box5:hover .content2 {
+    top: 0;
+}
+
+.content2 h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.inner-btn {
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2.2rem;
+    border-radius: 5px;
+    border: none;
+    width: 12rem;
+}
+
+.main-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding:2rem;
+}
+.textboxk{
+    text-align: center;
+    font-size:1.9rem;
+    color: white;
+}
+
+header {
+    background-color: #bd7d60 ; 
+    color: #000103; 
+    padding: 10px; 
+    text-align: center; 
+    line-height: 1em;
+}
+
+
+nav {
+    margin-top: 5px; 
+}
+
+
+nav ul {
+    list-style-type: none; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #010408; 
+    font-weight: bold; 
+    transition: color 0.6s;
+}
+
+
+nav ul li a:hover {
+    color: #6c1111; 
+}
+
+
+footer {
+    background-color: #bd7d60 ; 
+    color: rgb(14, 7, 7); 
+    padding: 10px 0; 
+    text-align: center; 
+    font-family: cursive;
+    line-height:0.5em;
+}
+
+.footer-content {
+    margin-bottom: 20px; 
+    
+}
+
+.socials a {
+    margin: 0 10px; /* Space between social links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    font-size: 14px; /* Smaller font size for copyright */
+}
+h1 {
+    color: brown;
+    text-align: center;
+
+}
+.textboxk p {
+     color: black;
+     font-family: cursive;
+     font-size: large;
+
+}
+
+
+
+
+
+
+/* For devices with a width of 480px or less (Mobile phones) */
+@media screen and (max-width: 480px) {
+    .box5 {
+        width: 100%; /* Takes full width on smaller screens */
+        height: auto; /* Adjust height */
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .inner-btn {
+        font-size: 1rem;
+        width: 8rem; /* Smaller button size */
+    }
+
+    .textboxk {
+        font-size: 1.2rem;
+    }
+
+    .content2 {
+        padding-right: 1rem; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Smaller text size for navigation links */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller text in footer */
+    }
+}
+

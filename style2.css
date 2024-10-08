@@ -1,0 +1,223 @@
+body {
+    background-color: rgb(226, 238, 249);
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: relative; /* Makes the background stay fixed while scrolling */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header {
+    background-color: #bd7d60 ; 
+    color: #000103; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+nav {
+    margin-top: 10px; 
+}
+
+
+nav ul {
+    list-style-type: none; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #010408; 
+    font-weight: bold; 
+    transition: color 0.6s;
+}
+
+
+nav ul li a:hover {
+    color: #6c1111; 
+    
+}
+h4{
+    text-align: center;
+    color: brown;
+    font-size: 40px;
+
+}
+
+.council {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between the items */
+}
+
+.council div {
+    text-align: center; /* Centers the text and images */
+    width: 200px; /* You can adjust this value */
+}
+
+.council img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover; /* Ensures the image doesn't stretch or distort */
+    border-radius: 10px; /* Optional: rounds the corners of images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition when hovered */
+}
+
+.council h3 {
+    margin: 10px 0;
+    font-size: 16px; /* Adjust font size if needed */
+    font-family: cursive;
+    color: black;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for images */
+.council div:hover img {
+    transform: scale(1.1); /* Scales the image slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+/* Hover effect for text */
+.council div:hover h3 {
+    color: darkred; /* Changes the text color on hover */
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #bd7d60 ; 
+    color: rgb(14, 7, 7); 
+    padding: 20px 0; 
+    text-align: center; 
+    font-family: cursive;
+    line-height: 1.5em;
+}
+
+.footer-content {
+    margin-bottom: 20px; 
+    
+}
+
+.socials a {
+    margin: 0 10px; /* Space between social links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    font-size: 14px; /* Smaller font size for copyright */
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* For devices with max-width of 1200px (Tablets and small desktops) */
+@media (max-width: 1200px) {
+    .council div {
+        width: 180px;
+    }
+    
+    .council img {
+        width: 180px;
+        height: 180px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+}
+
+/* For devices with max-width of 768px (Tablets and large phones) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .council {
+        justify-content: center;
+    }
+
+    .council div {
+        width: 160px;
+    }
+    
+    .council img {
+        width: 160px;
+        height: 160px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+}
+
+/* For devices with max-width of 480px (Mobile phones) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .council div {
+        width: 140px;
+    }
+    
+    .council img {
+        width: 140px;
+        height: 140px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+    
+    .footer-bottom {
+        font-size: 12px;
+    }
+}

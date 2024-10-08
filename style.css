@@ -1,0 +1,360 @@
+body {
+    background-color: rgb(226, 238, 249);
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+}
+
+img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 18px;
+}
+.slider h1 {
+    color: brown;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+}
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #bd7d60 ; 
+    color: #000103; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+nav {
+    margin-top: 10px; 
+}
+
+
+nav ul {
+    list-style-type: none; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #010408; 
+    font-weight: bold; 
+    transition: color 0.6s;
+}
+
+
+nav ul li a:hover {
+    color: #6c1111; 
+    
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+.Alumni {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  
+
+  
+  .chandni, .priya, .palak {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    background-color: #eee4e4;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .chandni img, .priya img, .palak img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    margin-left: 45px;
+ transition: transform 0.3s ease, box-shadow 0.8s ease; 
+    }
+    
+    .chandni img:hover, .priya img:hover, .palak img:hover {
+        transform: scale(1.25); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+
+  .chandni h3, .priya h3, .palak h3 {
+    font-size: 20px;
+    color: #480505;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: cursive;
+  }
+  
+  .chandni p, .priya p, .palak p {
+    font-size: 8px;
+    color: #666;
+    line-height: 1.5;
+    font-family: cursive;
+  }
+
+  
+  .Alumni {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+  }
+
+  h2 {
+    font-size: 2rem; 
+    color: brown; 
+    text-align: center; 
+    margin: 20px 0; 
+    font-family: cursive; 
+    letter-spacing: 1px; 
+  }
+
+.news {
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #eee4e4; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.news h3 {
+    color: #2b16cf; 
+    margin-bottom: 15px; 
+    font-size: 24px; 
+    text-decoration: underline;
+    font-family: cursive;
+
+}
+
+.news p {
+    color: #030208; 
+    margin-bottom: 20px; 
+    line-height: 1.6; 
+    font-family: cursive;
+}
+
+
+.image1, .image2, .image3, .image4, .image5, .image6 {
+    margin-bottom: 15px; 
+    margin-right: 20px;
+}
+
+.image1 img, .image2 img, .image3 img, .image4 img, .image5 img, .image6 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;}
+
+
+.image1 img:hover, .image2 img:hover, .image3 img:hover, .image4 img:hover, .image5 img:hover, .image6 img:hover {
+    transform: scale(1.50); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.ayushi {
+    display: flex;
+    flex-direction: row;
+
+}
+.mitali {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: #bd7d60 ; 
+    color: rgb(14, 7, 7); 
+    padding: 20px 0; 
+    text-align: center; 
+    font-family: cursive;
+    line-height: 1.5em;
+}
+
+.footer-content {
+    margin-bottom: 20px; 
+    
+}
+
+.socials a {
+    margin: 0 10px; /* Space between social links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    font-size: 14px; /* Smaller font size for copyright */
+}
+h4 {
+    font-size: x-large;
+}
+
+
+
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .slider {
+        max-width: 100%; /* Adjust slider width for smaller screens */
+    }
+
+    .slide {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.5rem; /* Adjust heading font size */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0; /* Add margin between nav links */
+        text-align: center;
+    }
+
+    .Alumni {
+        flex-direction: column; /* Stack Alumni profiles vertically */
+        margin: 10px 0;
+    }
+
+    .chandni, .priya, .palak {
+        max-width: 90%; /* Adjust profile boxes to fit screen */
+        margin: 10px auto;
+    }
+
+    .news {
+        max-width: 100%; /* Adjust news section for smaller screens */
+        padding: 10px;
+    }
+
+    .ayushi, .mitali {
+        flex-direction: column; /* Stack sections vertically */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .slide {
+        height: 200px; /* Adjust slider height for mobile */
+    }
+
+    img {
+        border-radius: 10px; /* Slightly reduce border-radius on mobile */
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce spacing between nav links */
+    }
+
+    .chandni, .priya, .palak {
+        max-width: 100%; /* Allow full width for profiles on mobile */
+    }
+
+    .news h3 {
+        font-size: 18px; /* Reduce font size for news headings */
+    }
+
+    .footer-content {
+        font-size: 14px; /* Reduce font size in footer */
+    }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1024px) {
+    .Alumni {
+        margin-left: 100px; /* Add more space on larger screens */
+    }
+
+    .slider h1 {
+        font-size: 3rem; /* Increase heading size */
+    }
+
+    .news {
+        max-width: 1100px; /* Adjust max-width for larger screens */
+    }
+
+    .chandni, .priya, .palak {
+        max-width: 28%; /* Slight adjustment for larger screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
